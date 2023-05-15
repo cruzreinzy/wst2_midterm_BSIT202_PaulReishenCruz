@@ -77,4 +77,6 @@ class Chats{
 
 }
 
+?>
 
+<script src="assets/js/message.js"></script>
