@@ -32,7 +32,7 @@ class Chats{
 
         $pdo = new PDO('mysql:host=localhost;dbname=chatbase','root','');
 
-        $query = 'SELECT accs.id, accs.name, chats.message FROM chats INNER JOIN accs ON chats.account_id = accs.id ORDER BY chats.timestamp ASC';
+        $query = 'SELECT accs.id, accs.name, chats.message, chats.timestamp FROM chats INNER JOIN accs ON chats.account_id = accs.id ORDER BY chats.timestamp ASC';
 
         $stmt = $pdo->prepare($query);
         
@@ -51,7 +51,7 @@ class Chats{
                         <p class="text-body text-opacity-75">Me</p>
                         <p class="text-white">'.$message['message'].'</p>
                         <button class="dltbtn btn btn-danger px-2.5 pt-1 float-end text-white" type="button">Unsend</button>
-                        <p class="text-body text-opacity-75">'.$message['name'].'</p>
+                        <p class="text-body text-opacity-75">'.$message['timestamp'].'</p>
                     </div>
                 </div>';
             }else{
@@ -60,7 +60,7 @@ class Chats{
                     <div class="bg-success bg-opacity-75 rounded-4 col-md-5 p-3 mb-3">
                         <p class="text-white">'.$message['name'].'</p>
                         <p class="text-body">'.$message['message'].'</p>
-                        <p class="text-white">'.$message['name'].'</p>
+                        <p class="text-white">'.$message['timestamp'].'</p>
                     </div>
                 </div>';
             }
