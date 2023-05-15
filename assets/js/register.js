@@ -53,11 +53,11 @@ $('.regs').click(function(){
     }
 })
 
-const showPassword = () => {
-    if (showpwd.checked === true) document.getElementById('pwd').type = 'text';
-}
-const hidePassword = () => {
-    if (showpwd.checked === false) document.getElementById('pwd').type = 'password';
-}
-showpwd.addEventListener('click', showPassword);
-showpwd.addEventListener('click', hidePassword);
+// const showPassword = () => {
+//     if (showpwd.checked === true) document.getElementById('pwd').type = 'text';
+// }
+// const hidePassword = () => {
+//     if (showpwd.checked === false) document.getElementById('pwd').type = 'password';
+// }
+// showpwd.addEventListener('click', showPassword);
+// showpwd.addEventListener('click', hidePassword);
