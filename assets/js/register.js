@@ -35,7 +35,7 @@ $('.regs').click(function(){
     }else if(nameField.value.length >= 6  && usnField.value.length >= 5 && pwdField.value.length >=6){
         
         $.ajax({
-            url:'../../router.php?ref=regist',
+            url:'router.php?ref=regist',
             data:$('#registration').serialize(),
             type:'POST',
             beforeSend:function(){

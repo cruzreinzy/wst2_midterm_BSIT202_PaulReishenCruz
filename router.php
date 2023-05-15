@@ -3,13 +3,13 @@
 require_once('assets/classes/class.users.php');
 require_once('assets/classes/class.chats.php');
 
-$users = new Users;
-
 if($_GET['ref'] == 'regist'){
+    $users = new Users;
     $users->regist($_POST['name'], $_POST['usn'], $_POST['pwd']);
 }
 
 if($_GET['ref'] == 'logins'){
+    $users = new Users;
     $users->logins($_POST['logusn'], $_POST['logpwd']);
 }
 
