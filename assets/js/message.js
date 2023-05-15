@@ -27,22 +27,9 @@ $('#message').keypress(function(e){
 
 $('.dltbtn').click(function(e){
     
-            $.ajax({
-                url:'router.php?ref=send',
-                data:{'message':$('#message').val()},
-                type:'POST',
-                    
-                success:function(e){
-                    if(e == 'success'){
-                        $('#message').val('')
-                        $('#message').focus()
-                        
-                    }
-                }
-            })
+    $('#messageko').css({'display':'none'})
 
 })
-// $('#loader2').css({'display':'none'})
     
     
 
