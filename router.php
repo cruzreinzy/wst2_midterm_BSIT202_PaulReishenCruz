@@ -23,7 +23,7 @@ if($_GET['ref'] == 'collect'){
     ($chats->collect());
 }
 
-// if($_GET['ref'] == 'delete'){
-//     $chats = new Chats;
-//     $chats->delete($_POST);
-// }
+if($_GET['ref'] == 'logout'){
+    $chats = new Chats;
+    echo $chats->logout();
+}

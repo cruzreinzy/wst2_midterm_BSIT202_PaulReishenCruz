@@ -25,7 +25,7 @@
         <div class="cbtitleall">
             <div class="cblogo"><a href="chatbox.php">ZyChats</a></div>
             <div class="cbtitle">Server Chatroom</div>
-            <div class="logoutbutton"><a href="#" id=ilogoutmoko>Log out</a></div>
+            <div class="logoutbutton"><a href="#" id=outy>Log out</a></div>
         </div>
     </header>
 
