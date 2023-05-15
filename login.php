@@ -24,7 +24,7 @@
 
                         <div class="infocontainer">
                             <label for="logusn"></label>
-                            <input class="holder" type="text" placeholder="Username" name="logusn" id="logusn">
+                            <input class="holder" type="text" placeholder="Email" name="logusn" id="logusn">
                         </div>
 
                         <div id="errinp" class="inpmarg4 red err hddn"><p>* Invalid Username</p></div>
