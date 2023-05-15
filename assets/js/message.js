@@ -24,13 +24,6 @@ $('#message').keypress(function(e){
 
     }
 })
-
-$('.dltbtn').click(function(e){
-    
-    $('#messageko').css({'display':'none'})
-
-})
-    
     
 
 setInterval(function(){
