@@ -8,7 +8,7 @@ class Users{
 
         $username = $_POST['usn'];
 
-        $query = 'SELECT * FROM accs WHERE username=:username';
+        $query = 'SELECT * FROM accs WHERE email=:username';
 
         $check = $pdo->prepare($query);
 
@@ -24,7 +24,7 @@ class Users{
             $username = $_POST['usn'];
             $pwd = $_POST['pwd'];
 
-            $query = 'INSERT INTO accs(name,username,password) VALUES(:name,:username,:password)';
+            $query = 'INSERT INTO accs(name,email,password) VALUES(:name,:username,:password)';
 
             $stmt = $pdo->prepare($query);
 
@@ -52,7 +52,7 @@ class Users{
         $username = $_POST['logusn'];
         $password = $_POST['logpwd'];
 
-        $query = 'SELECT * FROM accs WHERE username=:username and password=:password';
+        $query = 'SELECT * FROM accs WHERE email=:username and password=:password';
 
         $check = $pdo->prepare($query);
 

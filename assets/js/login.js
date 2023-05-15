@@ -29,7 +29,6 @@ $('.logs').click(function(){
             },
             success:function(e){
                 if(e == 'success'){
-                    alert("hi");
                     window.location.replace("chatbox.php");
     
                 }else if(e == 'invalid'){

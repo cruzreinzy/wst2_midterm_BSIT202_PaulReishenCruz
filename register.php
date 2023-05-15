@@ -33,7 +33,7 @@
                         <br>
                         <div class="infocontainer">
                             <label for="usn"></label>
-                            <input class="holder" type="text" placeholder="Username (must have 5 character)" name="usn" id="usn">
+                            <input class="holder" type="text" placeholder="Email (must have 5 character)" name="usn" id="usn">
                         </div>
 
                         <div id="errinp2" class="inpmarg2 red err hddn"><p>* Invalid Input</p></div>
