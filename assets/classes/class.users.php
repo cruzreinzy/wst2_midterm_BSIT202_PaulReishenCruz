@@ -6,23 +6,23 @@ class Users{
     
         $pdo = new PDO('mysql:host=localhost;dbname=chatbase','root','');
 
-        $username = $_POST['usn'];
+        // $username = $_POST['usn'];
 
-        $query = 'SELECT * FROM accs WHERE username=:username';
+        // $query = 'SELECT * FROM accs WHERE username=:username';
 
-        $check = $pdo->prepare($query);
+        // $check = $pdo->prepare($query);
 
-        $check->bindValue('username',$username);
+        // $check->bindValue('username',$username);
 
-        $check->execute();
+        // $check->execute();
 
-        $records = $check->fetchAll(PDO::FETCH_ASSOC);
+        // $records = $check->fetchAll(PDO::FETCH_ASSOC);
 
-        if(count($records) == 0){
+        // if(count($records) == 0){
 
             $name = $_POST['name'];
             $username = $_POST['usn'];
-            $password = $_POST['pwd'];
+            $pwd = $_POST['pwd'];
 
             $query = 'INSERT INTO accs(name,username,password) VALUES(:name,:username,:password)';
 
@@ -36,9 +36,9 @@ class Users{
 
             echo 'success';
 
-        }else{
-            echo 'username exist';
-        }
+        // }else{
+        //     echo 'username exist';
+        // }
 
     }
 

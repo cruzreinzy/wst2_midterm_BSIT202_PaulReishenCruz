@@ -18,7 +18,7 @@ $('.logs').click(function(){
         $('.inpmarg5').css({'display':'block'})
 
     }else if(logusnField.value.length >= 5 && logpwdField.value.length >= 6){
-
+        
         $.ajax({
             url:'router.php?ref=logins',
             data:$('#login').serialize(),
@@ -29,7 +29,7 @@ $('.logs').click(function(){
             },
             success:function(e){
                 if(e == 'success'){
-
+                    alert("hi");
                     window.location.replace("chatbox.php");
     
                 }else if(e == 'invalid'){

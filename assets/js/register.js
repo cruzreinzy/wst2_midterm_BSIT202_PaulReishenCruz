@@ -35,7 +35,7 @@ $('.regs').click(function(){
     }else if(nameField.value.length >= 6  && usnField.value.length >= 5 && pwdField.value.length >=6){
         
         $.ajax({
-            url:'router.php?ref=regist',
+            url:'../../router.php?ref=regist',
             data:$('#registration').serialize(),
             type:'POST',
             beforeSend:function(){
@@ -53,11 +53,11 @@ $('.regs').click(function(){
     }
 })
 
-// const showPassword = () => {
-//     if (showpwd.checked === true) document.getElementById('pwd').type = 'text';
-// }
-// const hidePassword = () => {
-//     if (showpwd.checked === false) document.getElementById('pwd').type = 'password';
-// }
-// showpwd.addEventListener('click', showPassword);
-// showpwd.addEventListener('click', hidePassword);
+const showPassword = () => {
+    if (showpwd.checked === true) document.getElementById('pwd').type = 'text';
+}
+const hidePassword = () => {
+    if (showpwd.checked === false) document.getElementById('pwd').type = 'password';
+}
+showpwd.addEventListener('click', showPassword);
+showpwd.addEventListener('click', hidePassword);
