@@ -78,11 +78,3 @@ class Chats{
 }
 
 ?>
-
-<script src="assets/js/message.js">
-    $('.dltbtn').click(function(e){
-    
-        $('#messageko').css({'display':'none'})
-
-    })
-</script>
