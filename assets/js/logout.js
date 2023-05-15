@@ -5,8 +5,7 @@ $('#outy').click(function(e){
     type:'POST',
                     
         success:function(e){
-            window.location.replace("login.php");
-                        
+            window.location.replace("login.php");   
         }
     })
 
